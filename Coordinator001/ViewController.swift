@@ -18,7 +18,7 @@ class ViewController: UIViewController, Storyborded {
     }
 
     @IBAction func loginTapped(_ sender: Any) {
-        coordinator?.login()
+        coordinator?.login(to: 2)
     }
     
     @IBAction func registerTapped(_ sender: Any) {

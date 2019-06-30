@@ -9,12 +9,13 @@
 import UIKit
 
 class LoginViewController: UIViewController, Storyborded {
-    weak var coordinator : MainCoordinator?
-
+    weak var coordinator : LoginCoordinator?
+    var selectedProduct = 0
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
+
     
 
 }
