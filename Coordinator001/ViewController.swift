@@ -8,13 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, Storyborded {
 
+    weak var coordinator : MainCoordinator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func loginTapped(_ sender: Any) {
+        coordinator?.login()
+    }
+    
+    @IBAction func registerTapped(_ sender: Any) {
+        coordinator?.register()
+    }
 }
 
